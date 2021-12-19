@@ -1,5 +1,10 @@
-<app-camera (getPicture)="handleImage($event)"></app-camera>
-
-<div class="webcam-image" *ngIf="webcamImage">
-  <img [src]="webcamImage.imageAsDataUrl" />
+<div class="container">
+    <app-camera (getPicture)="handleImage($event)"></app-camera>
+    <app-camera (getPicture)="handleImage($event)"></app-camera>
+    <app-camera (getPicture)="handleImage($event)"></app-camera>
+  
+   <div class="webcam-image" *ngIf="webcamImage">
+    <img [src]="webcamImage.imageAsDataUrl" />
+  </div>
 </div>
+  

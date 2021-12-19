@@ -4,8 +4,8 @@
             <button class="button" (click)="takeSnapshot()">Take Picture</button>
             <button class="button" (click)="changeWebCame(true)">Toggle Camera</button>
             <button class="button" (click)="onOffWebCame()">Switch camera</button>
-        </div> <br />
-        <webcam [height]="500" [width]="1000" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+        </div> 
+        <webcam [height]="200" [width]="400" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
             *ngIf="showWebcam" [switchCamera]="nextWebcamObservable"></webcam>
     </div>
 
